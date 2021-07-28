@@ -5,13 +5,13 @@ class User {
   String password;
   bool keepOn;
 
-  User({required this.name, required this.mail, required this.password, required this.keepOn});
-  fromJson(Map<String, dynamic> json) {
-    name = json['name'];
-    mail = json['mail'];
-    password = json['password'];
-    keepOn = json['keepOn'];
-  }
+    User({required this.name, required this.mail, required this.password, required this.keepOn});
+    fromJson(Map<String, dynamic> json) {
+      name = json['name'];
+      mail = json['mail'];
+      password = json['password'];
+      keepOn = json['keepOn'];
+    }
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
